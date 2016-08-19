@@ -4,11 +4,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace SimpleCalculator.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class EvaluatorTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void InstantiatingAnEvalInstance()
         {
+            Evaluator eval = new Evaluator();
+            Assert.IsNotNull(eval);
         }
     }
 }
